@@ -1,0 +1,125 @@
+/* ==================================== */
+/* 1. RÉGLAGES DE BASE ET TYPOGRAPHIE  */
+/* ==================================== */
+
+body {
+    font-family: Georgia, serif; /* Police classique et élégante */
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8e3; /* Crème très clair, ambiance cosy */
+    color: #4a4a4a; /* Gris chaud pour le texte */
+    line-height: 1.7;
+}
+
+header {
+    background-color: #a30000; /* Rouge bordeaux/vin */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 5px solid #800000;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+h2, h3 {
+    color: #a30000;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+/* ==================================== */
+/* 2. MISE EN PAGE SIMPLE ET CONTENEUR */
+/* ==================================== */
+
+/* Conteneur pour centrer le contenu principal et ajouter des marges */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 20px auto; /* Centre le contenu horizontalement */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 0; /* Le padding est géré par le .container */
+}
+
+/* Les éléments 'aside' et 'main' s'afficheront ici l'un après l'autre (verticalement)
+   sauf si vous leur donnez des propriétés de flottement (float) ou display: inline-block */
+aside {
+    padding: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #e0e0e0;
+    background-color: #fffaf0; /* Blanc cassé léger */
+    color: #6a6a6a;
+}
+
+/* ==================================== */
+/* 3. STYLES DES TABLEAUX              */
+/* ==================================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+}
+
+th, td {
+    padding: 18px 15px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #cc0000; /* Rouge plus clair */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Alternance de couleurs pour un look de "nappe" */
+tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+tr:hover {
+    background-color: #ffe5e5; /* Léger rose au survol */
+}
+
+td img {
+    border: none;
+    border-radius: 2px;
+    object-fit: cover;
+}
+
+/* ==================================== */
+/* 4. FOOTER et LIENS                   */
+/* ==================================== */
+
+a {
+    color: #800000; 
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #cc0000;
+}
+
+footer {
+    background-color: #a30000;
+    color: #fcf8e3;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 30px;
+}
